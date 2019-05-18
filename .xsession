@@ -1,0 +1,6 @@
+# ...
+# set xterm geometry and other props according to your needs
+
+xterm -geometry 320x1+0+0 -fa Consolas -fs 11 -name termbar -class termbar -T termbar -e termbar.sh &
+
+# ...
