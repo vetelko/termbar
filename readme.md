@@ -6,3 +6,5 @@ This idea came from assumption that many window managers can:
 
 You can replace all those conkys, bars, panels, ..  etc.  with (shell)
 script running in terminal window.
+
+This example is for cwm window manager in OpenBSD.
