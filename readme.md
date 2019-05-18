@@ -4,5 +4,5 @@ This idea came from assumption that many window managers can:
 * ignore particular window with proper settings
 * show particular window on all workspaces (sticky windows)
 
-You can replace all those conkys, bars, panels, ..  etc.  with shell
+You can replace all those conkys, bars, panels, ..  etc.  with (shell)
 script running in terminal window.
