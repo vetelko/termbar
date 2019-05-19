@@ -1,4 +1,5 @@
-This idea came from assumption that many window managers can:
+This idea came from assumption that you are using some kind of panel or
+bar in your WM and that many window managers can:
 
 * create a gap between screen edge and window border
 * ignore particular window with proper settings
@@ -7,4 +8,6 @@ This idea came from assumption that many window managers can:
 You can replace all those conkys, bars, panels, ..  etc.  with (shell)
 script running in terminal window.
 
-This example is for cwm window manager in OpenBSD.
+This simple example is for cwm window manager in OpenBSD.
+
+
