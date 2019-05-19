@@ -2,7 +2,7 @@
 # don't forget to set some gap :)
 
 ignore termbar
-gap 18 0 0 0
+gap 19 0 0 0
 autogroup 0 "termbar,termbar"
 
 # ...
