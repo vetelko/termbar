@@ -1,5 +1,5 @@
 This idea came from assumption that you are using some kind of panel or
-bar in your WM and that many window managers *can*:
+bar in your WM and that many window managers **can**:
 
 * create a gap between screen edge and window border
 * ignore particular window
