@@ -1,8 +1,8 @@
 This idea came from assumption that you are using some kind of panel or
-bar in your WM and that many window managers can:
+bar in your WM and that many window managers *can*:
 
 * create a gap between screen edge and window border
-* ignore particular window, so it has no borders and is ignored while switching between windows
+* ignore particular window
 * show particular window on all workspaces (sticky windows)
 
 You can replace all those conkys, bars, panels, ..  etc.  with (shell)
