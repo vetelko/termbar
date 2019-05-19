@@ -10,4 +10,4 @@ script running in terminal window.
 
 This simple example is for cwm window manager in OpenBSD.
 
-![termbar running in cwm](shot_08:45:45.png)
+![termbar running in cwm](./shot_08:45:45.png?raw=true)
