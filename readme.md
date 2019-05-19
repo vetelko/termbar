@@ -12,4 +12,8 @@ The following image is showing termbar (xterm) with current time updated
 every second, running in cwm on OpenBSD. It is very simple example,
 the possibilities are endless, you can output anything into termbar.
 
+This xterm window is ignored by cwm, it is ignored while switching
+between windows, it has no border, it is not covered by other windows
+if you maximize them.
+
 ![termbar running in cwm](./shot_08:45:45.png?raw=true)
