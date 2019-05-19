@@ -9,6 +9,7 @@ You can replace all those conkys, bars, panels, ..  etc.  with (shell)
 script running in terminal window.
 
 The following image is showing termbar with current time updated
-every second, running in cwm on OpenBSD.
+every second, running in cwm on OpenBSD. It is very simple example,
+the possibilities are endless, you can output anything into termbar.
 
 ![termbar running in cwm](./shot_08:45:45.png?raw=true)
