@@ -8,6 +8,7 @@ bar in your WM and that many window managers can:
 You can replace all those conkys, bars, panels, ..  etc.  with (shell)
 script running in terminal window.
 
-This simple example is for cwm window manager in OpenBSD.
+The following image is showing termbar with current time updated
+every second, running in cwm on OpenBSD.
 
 ![termbar running in cwm](./shot_08:45:45.png?raw=true)
