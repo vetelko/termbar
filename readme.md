@@ -1,3 +1,5 @@
+**If you like Termbar idea** please share your scripts with me.
+
 This idea came from assumption that you are using some kind of panel or
 bar in your WM and that many window managers **can**:
 
@@ -9,7 +11,7 @@ You can replace all those conkys, bars, panels, ..  etc.  with (shell)
 script running in terminal window.
 
 On the following image is white Termbar (xterm) showing some info
-usefull for me e.g number of ssh sessions running.  It is very simple
+useful for me e.g number of ssh sessions running.  It is very simple
 example, the possibilities are endless, you can output anything into
 termbar.
 
