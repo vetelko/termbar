@@ -13,7 +13,6 @@ while true; do
 	cpu=`sysctl hw.sensors.cpu0.temp0 | cut -d "=" -f 2 | cut -d "." -f 1`
 	bat=`apm -l`
 	vol=$((`mixerctl -n outputs.master|cut -f 1 -d ','`*100/255))
-	
 	printf "Termbar: %-5s %s | terms:%s | sshs:%s | bat:%s%% | vol:%s%% | cpu:%s° | %s\r" \
 		"$memos" "$part" "$terms" "$sshs" "$bat" "$vol" "$cpu" "$date"
 
