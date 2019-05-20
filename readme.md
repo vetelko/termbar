@@ -9,13 +9,12 @@ You can replace all those conkys, bars, panels, ..  etc.  with (shell)
 script running in terminal window.
 
 On the following image is white termbar (xterm) showing some info
-usefull for me e.g number of ssh sessions running.
+usefull for me e.g number of ssh sessions running.  It is very simple
+example, the possibilities are endless, you can output anything into
+termbar.
 
-It is very simple example, the possibilities are endless, you can 
-output anything into termbar.
-
-Termbar window is ignored by cwm, it is ignored while switching
-between windows, it has no border, it is not covered by other windows
-if you maximize them.
+Termbar window is ignored by cwm, it is ignored while switching between
+windows, it has no border, it is not covered by other windows if you
+maximize them.
 
 ![termbar running in cwm](./screenshot.png?raw=true)
