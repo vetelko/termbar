@@ -12,8 +12,8 @@ while true; do
 	# Random lines from my openbsd and related cheatsheet 
 	# I want to remember
 	MEMO=$(cat /home/"$ME"/work/openbsd/memoize | sort -R | head -n1)
-	TERMS=$(ps -c -U "$ME" | grep -c st)
-	SSHS=$(ps -c -U "$ME" | grep -c ssh$)
+	TERMS=$(pgrep -u "$ME" st$ | wc -l | tr -d ' ')
+	SSHS=$(pgrep -u "$ME" ssh$ | wc -l | tr -d ' ')
 	#PART=$(df -h | tail -n+2 | awk '{print $6 " " $5}' | paste -s - | tr '\t' ' ')
 	CPU=$(sysctl hw.sensors.cpu0.temp0 | cut -d "=" -f 2 | cut -d "." -f 1)
 	VOL=$((`mixerctl -n outputs.master|cut -f 1 -d ','`*100/255))
