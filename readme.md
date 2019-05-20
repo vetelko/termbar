@@ -8,8 +8,7 @@ bar in your WM and that many window managers **can**:
 You can replace all those conkys, bars, panels, ..  etc.  with (shell)
 script running in terminal window.
 
-The following image is showing termbar (xterm)
-On the following image is white termbar showing some info
+On the following image is white termbar (xterm) showing some info
 usefull for me e.g number of ssh sessions running.
 
 It is very simple example, the possibilities are endless, you can 
