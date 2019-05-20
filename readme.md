@@ -1,4 +1,5 @@
-**If you like Termbar idea** please share your scripts with me.
+**If you like Termbar idea** please share your scripts with me via
+pull requests, pastebins, issues ... Thanks.
 
 This idea came from assumption that you are using some kind of panel or
 bar in your WM and that many window managers **can**:
