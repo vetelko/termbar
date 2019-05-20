@@ -8,13 +8,15 @@ bar in your WM and that many window managers **can**:
 * ignore particular window
 * show particular window on all workspaces (sticky windows)
 
-You can replace all those conkys, bars, panels, ..  etc.  with (shell)
-script running in terminal window.
+To replace all those conkys, bars, panels you need only:
 
-On the following image is white Termbar (xterm) showing some info
+* terminal window
+* shell script or any other language
+
+On the following image is Termbar (xterm) showing some info
 useful for me e.g number of ssh sessions running.  It is very simple
 example, the possibilities are endless, you can output anything into
-termbar.
+Termbar.
 
 Termbar window is ignored by cwm(1), it is ignored while switching between
 windows, it has no border, it is not covered by other windows if you
