@@ -7,19 +7,19 @@ red='\033[0;31m'
 rst='\033[0m'
 
 while true; do
-	date=$(date +"%A, %B %d - %H:%M")
-	user=$(whoami)
+	DATE=$(date +"%A, %B %d - %H:%M")
+	ME=$USER
 	# Random lines from my openbsd and related cheatsheet 
 	# I want to remember
-	memos=$(cat /home/"$user"/work/openbsd/memoize | sort -R | head -n1)
-	terms=$(ps -c -U "$user" | grep -c st)
-	sshs=$(ps -c -U "$user" | grep -c ssh$)
-	#part=$(df -h | tail -n+2 | awk '{print $6 " " $5}' | paste -s - | tr '\t' ' ')
-	cpu=$(sysctl hw.sensors.cpu0.temp0 | cut -d "=" -f 2 | cut -d "." -f 1)
-	vol=$((`mixerctl -n outputs.master|cut -f 1 -d ','`*100/255))
+	MEMO=$(cat /home/"$ME"/work/openbsd/memoize | sort -R | head -n1)
+	TERMS=$(ps -c -U "$ME" | grep -c st)
+	SSHS=$(ps -c -U "$ME" | grep -c ssh$)
+	#PART=$(df -h | tail -n+2 | awk '{print $6 " " $5}' | paste -s - | tr '\t' ' ')
+	CPU=$(sysctl hw.sensors.cpu0.temp0 | cut -d "=" -f 2 | cut -d "." -f 1)
+	VOL=$((`mixerctl -n outputs.master|cut -f 1 -d ','`*100/255))
 
-	printf "${red}cwm${rst} %-210s terms:%s | sshs:%s | vol: %s%% | cpu: %s° | %s\\r" \
-		"$memos" "$terms" "$sshs" "$vol" "$cpu" "$date"
+	printf "${red}cwm${rst} %-215s terms: %s  sshs: %s  vol: %s%%  cpu: %s°  %s\\r" \
+		"$MEMO" "$TERMS" "$SSHS" "$VOL" "$CPU" "$DATE"
 
 	sleep 5
 done
