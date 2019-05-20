@@ -13,8 +13,8 @@ usefull for me e.g number of ssh sessions running.  It is very simple
 example, the possibilities are endless, you can output anything into
 termbar.
 
-Termbar window is ignored by cwm, it is ignored while switching between
+Termbar window is ignored by cwm(1), it is ignored while switching between
 windows, it has no border, it is not covered by other windows if you
 maximize them.
 
-![termbar running in cwm](./screenshot.png?raw=true)
+![Image of Termbar running in cwm](./screenshot.png?raw=true "Termbar running in cwm")
