@@ -18,7 +18,7 @@ while true; do
 	CPU=$(sysctl hw.sensors.cpu0.temp0 | cut -d "=" -f 2 | cut -d "." -f 1)
 	VOL=$(($(mixerctl -n outputs.master|cut -f 1 -d ',')*100/255))
 
-	printf "${red}cwm${rst} %-215s terms: %s  sshs: %s  vol: %s%%  cpu: %s°  %s\\r" \
+	printf "  ${red}cwm${rst} %-248s terms: %s  sshs: %s  vol: %s%%  cpu: %s°  %s\\r" \
 		"$MEMO" "$TERMS" "$SSHS" "$VOL" "$CPU" "$DATE"
 
 	sleep 5

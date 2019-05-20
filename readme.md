@@ -20,4 +20,4 @@ Termbar window is ignored by cwm(1), it is ignored while switching between
 windows, it has no border, it is not covered by other windows if you
 maximize them.
 
-![Image of Termbar running in cwm](./screenshot.png?raw=true "Termbar running in cwm")
+![Image of Termbar running in cwm](./screenshot.png "Termbar running in cwm")
