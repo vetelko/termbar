@@ -1,0 +1,2 @@
+ignore "termbar"
+autogroup 0 "termbar,termbar"
