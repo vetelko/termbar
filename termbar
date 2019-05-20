@@ -16,7 +16,7 @@ while true; do
 	SSHS=$(pgrep -u "$ME" ssh$ | wc -l | tr -d ' ')
 	#PART=$(df -h | tail -n+2 | awk '{print $6 " " $5}' | paste -s - | tr '\t' ' ')
 	CPU=$(sysctl hw.sensors.cpu0.temp0 | cut -d "=" -f 2 | cut -d "." -f 1)
-	VOL=$((`mixerctl -n outputs.master|cut -f 1 -d ','`*100/255))
+	VOL=$(($(mixerctl -n outputs.master|cut -f 1 -d ',')*100/255))
 
 	printf "${red}cwm${rst} %-215s terms: %s  sshs: %s  vol: %s%%  cpu: %s°  %s\\r" \
 		"$MEMO" "$TERMS" "$SSHS" "$VOL" "$CPU" "$DATE"
