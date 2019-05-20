@@ -1,1 +1,79 @@
-/home/ivan/.cwmrc
+unbind-key				all
+unbind-mouse			all
+
+fontname				"Sans:pixelsize=30"
+moveamount				10
+snapdist				9 # use lower number than moveamount
+
+ignore					pany
+ignore					termbar
+
+						# t b l r
+gap						18 0 0 0
+sticky					yes
+
+autogroup 0				"pany,Pany"
+autogroup 0				"termbar,termbar"
+
+wm						Fvwm /usr/X11R6/bin/fvwm
+
+borderwidth				1
+color activeborder		"#555555"
+color inactiveborder	"#333333"
+color font				"#000000"
+color selfont			"#ffffff"
+color menubg			"#87ceeb"
+
+
+bind-key 4-Return		"st-white -g 100x20 -e ksh -l"
+bind-key 4S-Return		"st -g 100x20 -e ksh -l"
+bind-key 4-t			"st -g 100x20 -e note"
+bind-key 4-p			"scrot -s"
+bind-key 4-d			menu-exec
+bind-key 4-g			menu-group
+bind-key 4-w			menu-window
+bind-key 4-s			menu-ssh
+bind-key 4-c			menu-cmd
+bind-key 4-q			menu-exec-wm
+
+bind-key 4-a			window-menu-label
+
+bind-key 4-f			window-maximize # window-fullscreen
+bind-key 4-v			window-vtile
+bind-key 4-x			window-htile
+
+bind-key 4S-V			window-vmaximize
+bind-key 4S-H			window-hmaximize
+
+bind-key 4-r			window-raise
+bind-key 4-l			window-lower
+
+bind-key 4C-h			window-move-left
+bind-key 4C-j			window-move-down
+bind-key 4C-l			window-move-right
+bind-key 4C-k			window-move-up
+
+#bind-key M-Tab			window-cycle-ingroup
+bind-key 4-n			window-cycle-ingroup
+bind-key 4-Tab			window-cycle
+
+bind-key 4-1			group-only-1
+bind-key 4-2			group-only-2
+bind-key 4-3			group-only-3
+bind-key 4-4			group-only-4
+bind-key 4S-1			window-movetogroup-1
+bind-key 4S-2			window-movetogroup-2
+bind-key 4S-3			window-movetogroup-3
+bind-key 4S-4			window-movetogroup-4
+
+bind-key 4-F12			"zzz"
+bind-key 4S-R			restart
+bind-key 4S-Q			window-delete	# as kill
+bind-key 4S-E			quit
+
+bind-mouse 4-1			window-raise
+bind-mouse 4-2			window-resize
+bind-mouse 4-3			window-move
+bind-mouse 4-4			group-cycle
+bind-mouse 4-5			group-rcycle
+
