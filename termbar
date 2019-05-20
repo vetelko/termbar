@@ -11,7 +11,7 @@ while true; do
 	ME=$USER
 	# Random lines from my openbsd and related cheatsheet 
 	# I want to remember
-	MEMO=$(cat /home/"$ME"/work/openbsd/memoize | sort -R | head -n1)
+	MEMO=$(sort -R /home/"$ME"/work/openbsd/memoize | head -n1)
 	TERMS=$(pgrep -u "$ME" st$ | wc -l | tr -d ' ')
 	SSHS=$(pgrep -u "$ME" ssh$ | wc -l | tr -d ' ')
 	#PART=$(df -h | tail -n+2 | awk '{print $6 " " $5}' | paste -s - | tr '\t' ' ')
