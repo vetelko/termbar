@@ -8,12 +8,15 @@ bar in your WM and that many window managers **can**:
 You can replace all those conkys, bars, panels, ..  etc.  with (shell)
 script running in terminal window.
 
-The following image is showing termbar (xterm) with current time updated
-every second, running in cwm on OpenBSD. It is very simple example,
-the possibilities are endless, you can output anything into termbar.
+The following image is showing termbar (xterm)
+On the following image is white termbar showing some info
+usefull for me e.g number of ssh sessions running.
 
-This xterm window is ignored by cwm, it is ignored while switching
+It is very simple example, the possibilities are endless, you can 
+output anything into termbar.
+
+Termbar window is ignored by cwm, it is ignored while switching
 between windows, it has no border, it is not covered by other windows
 if you maximize them.
 
-![termbar running in cwm](./shot_08:45:45.png?raw=true)
+![termbar running in cwm](./screenshot.png?raw=true)
