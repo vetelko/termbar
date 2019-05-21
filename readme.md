@@ -1,4 +1,4 @@
-**If you like Termbar idea** please share your scripts with me via pull
+Termbar is a terminal window in the role of status bar. **If you like Termbar idea** please share your scripts with me via pull
 requests, pastebins, issues ...  Thanks.
 
 This idea came from assumption that you are using some kind of panel or
