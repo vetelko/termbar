@@ -8,13 +8,16 @@ rst='\033[0m'
 
 while true; do
 	DATE=$(date +"%A, %B %d - %H:%M")
-	ME=$USER
+
 	# Random lines from my openbsd and related cheatsheet 
 	# I want to remember
-	MEMO=$(sort -R /home/"$ME"/work/openbsd/memoize | head -n1)
-	NVI=$(pgrep -u "$ME" nvi$ | wc -l | tr -d ' ')
-	TERMS=$(pgrep -u "$ME" st$ | wc -l | tr -d ' ')
-	SSHS=$(pgrep -u "$ME" ssh$ | wc -l | tr -d ' ')
+	MEMO=$(sort -R /home/"$USER"/work/openbsd/memoize | head -n1)
+
+	# Don't exit WM while something important is running on workspaces
+	NVI=$(pgrep -u "$USER" nvi$ | wc -l | tr -d ' ')
+	TERMS=$(pgrep -u "$USER" st$ | wc -l | tr -d ' ')
+	SSHS=$(pgrep -u "$USER" ssh$ | wc -l | tr -d ' ')
+
 	#PART=$(df -h | tail -n+2 | awk '{print $6 " " $5}' | paste -s - | tr '\t' ' ')
 	CPU=$(sysctl -n hw.sensors.cpu0.temp0 | cut -d. -f1)
 	VOL=$(($(mixerctl -n outputs.master|cut -f 1 -d ',')*100/255))
