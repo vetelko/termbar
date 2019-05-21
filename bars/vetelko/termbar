@@ -12,14 +12,15 @@ while true; do
 	# Random lines from my openbsd and related cheatsheet 
 	# I want to remember
 	MEMO=$(sort -R /home/"$ME"/work/openbsd/memoize | head -n1)
+	NVI=$(pgrep -u "$ME" nvi$ | wc -l | tr -d ' ')
 	TERMS=$(pgrep -u "$ME" st$ | wc -l | tr -d ' ')
 	SSHS=$(pgrep -u "$ME" ssh$ | wc -l | tr -d ' ')
 	#PART=$(df -h | tail -n+2 | awk '{print $6 " " $5}' | paste -s - | tr '\t' ' ')
 	CPU=$(sysctl -n hw.sensors.cpu0.temp0 | cut -d. -f1)
 	VOL=$(($(mixerctl -n outputs.master|cut -f 1 -d ',')*100/255))
 
-	printf "  ${red}cwm${rst} %-248s terms: %s  sshs: %s  vol: %s%%  cpu: %s°  %s\\r" \
-		"$MEMO" "$TERMS" "$SSHS" "$VOL" "$CPU" "$DATE"
+	printf "  ${red}cwm${rst} %-240s  nvis: %s  terms: %s  sshs: %s  vol: %s%%  cpu: %s°  %s\\r" \
+		"$MEMO" "$NVI" "$TERMS" "$SSHS" "$VOL" "$CPU" "$DATE"
 
 	sleep 5
 done
