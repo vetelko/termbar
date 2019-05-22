@@ -22,8 +22,8 @@ while true; do
 	# - 
 	CPU=$(sysctl -n hw.sensors.cpu0.temp0 | cut -d. -f1)
 
-	printf "  ${red}cwm${rst} %-240s  nvis: %s  terms: %s  sshs: %s  vol: %s%%  cpu: %s°  %s\\r" \
-		"$MEMO" "$NVI" "$TERMS" "$SSHS" "$VOL" "$CPU" "$DATE"
+	printf "  ${red}cwm${rst} %-239s  nvis: %s  terms: %s  sshs: %s  cpu: %s°  %s\\r" \
+		"$MEMO" "$NVI" "$TERMS" "$SSHS" "$CPU" "$DATE"
 
 	sleep 5
 done
