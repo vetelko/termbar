@@ -8,7 +8,7 @@ bar in your WM and that many window managers **are able to**:
 * ignore particular window
 * show particular window on all workspaces (sticky windows)
 
-To replace all those conkys, bars, panels you need only:
+Requirements:
 
 * terminal window
 * shell script or any other language
