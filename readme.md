@@ -11,7 +11,7 @@ bar in your WM and that many window managers **are able to**:
 Requirements:
 
 * terminal window
-* shell script or any other language
+* program with output to terminal
 
 On the following image is Termbar (xterm) showing some info useful for
 me e.g number of ssh sessions running.  It is very simple example, the
